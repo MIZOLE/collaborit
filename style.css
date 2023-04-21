@@ -1,0 +1,135 @@
+/* body {
+    background-image: url("template-3160023_1920.jpg");
+    background-repeat: no-repeat;
+    background-color: bisque;
+    background-position: center;
+}
+
+h1 {
+    background-position: center;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+}
+
+.card {
+    box-shadow: inset;
+    max-width: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.wifi {
+    color: black;
+    font-size: 30px;
+    margin-left: 5em;
+}
+
+.button {
+ border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.button:hover {
+    opacity: 0.7;
+  }
+
+.brief {
+    color: black;
+    font-size: 19px;
+    margin-right: 40em;
+    margin-left: 5em;
+
+} */
+
+/* .topnav { */
+    /* overflow: hidden; */
+    /* background-color: #333; */
+    /* position: center; Set the navbar to fixed position */
+   
+    /* margin-bottom: 3em;
+    margin-top: 3em;
+    text-align: right;
+  } */
+
+  /* .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2; */
+    /* text-align: center; */
+    /* padding: 14px 16px;
+    text-decoration: none; */
+  /* }  */
+
+  /* Cha    nge background on mouse-over */
+/* .navbar a:hover {
+    background: #ddd; */
+    /* color: black;
+  } 
+
+  .logo {
+    text-align: left;
+    position: right ;
+  }
+
+.image_cont {
+    text-align: right;
+}
+
+header {
+    background-color: antiquewhite;
+
+    margin-top: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
+
+}
+
+.container {
+    display: flex;
+    width: 80%;
+}
+
+.one {
+    background-color: aquamarine;
+}
+
+.two {
+    background-color: bisque;
+}
+
+.three {
+    background-color: burlywood;
+}
+
+.four {
+    background-color: blue;
+}
+
+.five {
+    background-color: cornsilk;
+}   
+
+.section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    cursor: pointer;
+    flex: 0.2;
+    margin: 8px;
+    position: relative;
+    transition: all 0.7s ease-out;
+}
+
+.section.active {
+    flex: 3;
+  } */
