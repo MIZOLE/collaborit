@@ -43,8 +43,11 @@ body {
      background-color: blueviolet;
      background-size: cover; 
      text-align: justify;
-     max-width: 700;
-    height: 400px;
+     max-width: 500;
+     height: 200px;
+     padding-left: 20px;
+     margin: 30px;
+     text-decoration-color: #ddd;
     /* display: flex; */
     /* align-items: center;
     justify-content: center; */
@@ -54,9 +57,22 @@ body {
 
 h1#heading {
     background-position: center;
-    text-align: center;
+    text-align: justify;
     color: black;
     text-transform: uppercase;
+    padding-left: 20px;
+
+}
+h2#about{
+    text-align: center;
+    
+}
+.list-of-ideas input {
+    width: calc(100%/4);
+    margin: 0 2% 0 0.5%;
+}
+.list-of-ideas input::placeholder {
+    padding-left: 5px;
 }
 
 h1#view{
@@ -68,6 +84,9 @@ h2 {
 }
 
 
+.list-of-ideas label {
+    font-weight: bold;
+}
 .one {
     background-color: blueviolet;
     display: flex;
@@ -78,16 +97,29 @@ h2 {
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
+    color: black;
     /* gap: 2px; */
     /* justify-content: space-evenly; */
 }
-.card {
+
+.selected{
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+
+}
+
+ .card {
     box-shadow: inset;
     max-width: 300px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 5px;
     text-align: center;
-}
+ }
+
+ .wrapper{
+    display: flex;
+ }
 
 /* .wifi {
     color: black;
@@ -96,7 +128,7 @@ h2 {
 } */
 
 .button {
- border: none;
+  border: none;
   outline: 0;
   padding: 12px;
   color: white;
@@ -105,6 +137,7 @@ h2 {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  
 }
 
 .button:hover {
@@ -118,10 +151,6 @@ h2 {
     margin-left: 5em;
 
 }
-
-
-
-
 
   .logo {
     text-align: left;
@@ -151,22 +180,26 @@ header {
 
 }
 
+
+
+
+
 .two {
     background-color: bisque;
 }
 
-.three {
-    background-color: burlywood;
+ .three { 
+     background-color: burlywood; 
 }
 
 .four {
-    background-color: blue;
+    background-color: black;
 }
 
 .five {
     background-color: cornsilk;
 }   
-
+*/
 .section {
     background-size: cover;
     background-position: center;
@@ -177,31 +210,46 @@ header {
     margin: 8px;
     /* position: relative; */
     transition: all 0.7s ease-out;
+    
 }
 
-/* .section.active {
+ /* .section.active {
     flex: 3;
   } */
-
-  /* #enter_idea {
-    height: 35px;
-    line-height: 35px;
-    align-items: center;
-
-  } */
-
+  .header h4{
+    padding: 0 20px;
+    text-decoration: underline;
+  }
   .list-of-ideas {
-    display:flex;
+
+    display: flex;
     margin: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
     justify-content: space-between;
   }
+.ideas h3, .show {
+    padding: 0 20px;
+}
 
+.show {
+    color: rgb(104, 69, 69);
+    font-weight: bold;
+    font-size: 14px;
+}
   .submit {
     border-radius: 7px;
     margin-right: 100px;
-    box-shadow: 0 0 5px  skyblue, 0 0 25px  skyblue, 0 0 50px  skyblue, 0 0  skyblue;
-    background: skyblue;
-
+    background: rgb(31, 2, 49);
+    box-shadow: rgb(243, 240, 240);
+    color: #ddd;
+    width: 100px;
+    font-weight: bold;
+  }
+  #enter_idea{
+    height: 35px;
+    line-height: 35px;
   }
 
   
