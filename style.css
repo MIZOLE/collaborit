@@ -41,8 +41,11 @@ body {
      background-color: blueviolet;
      background-size: cover; 
      text-align: justify;
-     max-width: 700;
-    height: 400px;
+     max-width: 500;
+     height: 200px;
+     padding-left: 20px;
+     margin: 30px;
+     text-decoration-color: #ddd;
     /* display: flex; */
     /* align-items: center;
     justify-content: center; */
@@ -52,17 +55,36 @@ body {
 
 h1#heading {
     background-position: center;
-    text-align: center;
+    text-align: justify;
     color: black;
     text-transform: uppercase;
+    padding-left: 20px;
+
+}
+h2#about{
+    text-align: center;
+    
+}
+.list-of-ideas input {
+    width: calc(100%/4);
+    margin: 0 2% 0 0.5%;
+}
+.list-of-ideas input::placeholder {
+    padding-left: 5px;
 }
 
+<<<<<<< HEAD
 /* h2#About{
     text-align: center;
 } */
 
 p
 
+=======
+.list-of-ideas label {
+    font-weight: bold;
+}
+>>>>>>> 80d375247ce52a1a03c7846baf243c11485e608e
 .one {
     background-color: blueviolet;
     display: flex;
@@ -104,7 +126,7 @@ p
 } */
 
 .button {
- border: none;
+  border: none;
   outline: 0;
   padding: 12px;
   color: white;
@@ -113,6 +135,7 @@ p
   cursor: pointer;
   width: 100%;
   font-size: 18px;
+  
 }
 
 .button:hover {
@@ -137,12 +160,18 @@ p
 }
 
 header {
-    background-color: blueviolet;
+    background-color: rgb(104, 5, 54);
 
     margin-top: 5em;
     margin-left: 2em;
     margin-right: 2em;
+    
 
+}
+.btn  {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
 }
 
 /* .two { 
@@ -171,15 +200,43 @@ header {
     margin: 8px;
     /* position: relative; */
     transition: all 0.7s ease-out;
+    
 }
 
-/* .section.active {
+ /* .section.active {
     flex: 3;
   } */
+  .header h4{
+    padding: 0 20px;
+    text-decoration: underline;
+  }
+  .list-of-ideas {
 
-  #enter_idea{
-    height: 35px;
-    line-height: 35px;
+    display: flex;
+    margin: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+.ideas h3, .show {
+    padding: 0 20px;
+}
+
+.show {
+    color: rgb(104, 69, 69);
+    font-weight: bold;
+    font-size: 14px;
+}
+  .submit {
+    border-radius: 7px;
+    margin-right: 100px;
+    background: rgb(31, 2, 49);
+    box-shadow: rgb(243, 240, 240);
+    color: #ddd;
+    width: 100px;
+    font-weight: bold;
+
   }
 
   
