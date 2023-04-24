@@ -40,13 +40,13 @@ body {
 
  .firstsection {
 
-     background-color: blueviolet;
+     
      background-size: cover; 
      text-align: justify;
-     max-width: 500;
+     /* max-width: 500; */
      height: 200px;
-     padding-left: 20px;
-     margin: 30px;
+     /* padding-left: 20px; */
+     /* margin: 30px; */
      text-decoration-color: #ddd;
     /* display: flex; */
     /* align-items: center;
@@ -54,7 +54,10 @@ body {
     /* max-width: 90%; */
     /* margin: auto; */
  }  
-
+.firsthalf {
+    background-color: blueviolet;
+    padding: 0 10px;
+}
 h1#heading {
     background-position: center;
     text-align: justify;
@@ -127,7 +130,16 @@ h2 {
     font-size: 30px;
     margin-left: 5em;
 } */
+.card-1 {
+    background-color: skyblue;
+    color: #000;
+    text-align: justify;
+    font-weight: lighter;
+}
+.card-2 {
+    background-color: wheat;
 
+}
 .button {
   border: none;
   outline: 0;
