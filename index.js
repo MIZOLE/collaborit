@@ -27,8 +27,8 @@ function read_idea(){
                 `
         }else{  
             container2 += `
-
-                <div class="card" style="width: 18rem; margin-bottom: 10px;background-color:indigo" onclick="collaborate(${i})">
+                
+                <div class="card" style="width: 18rem; margin-bottom: 10px;" onclick="collaborate(${i})">
                 <div class="card-body">
                 <h5 class="card-title">${ele.idea}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">Date: ${ele.date}</h6>

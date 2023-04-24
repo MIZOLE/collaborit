@@ -19,7 +19,9 @@ body {
     padding: 14px 16px;
     text-decoration: none;
   } 
-
+.pic {
+    width: 100%;
+}
   /* Cha    nge background on mouse-over */
 .navbar a:hover {
     background: #ddd;
@@ -72,6 +74,15 @@ h2#about{
 .list-of-ideas input::placeholder {
     padding-left: 5px;
 }
+
+h1#view{
+    text-align: left;
+    padding-left: 500px;
+}
+h2 {
+    text-align: center;
+}
+
 
 .list-of-ideas label {
     font-weight: bold;
@@ -144,6 +155,14 @@ h2#about{
   .logo {
     text-align: left;
     position: right ;
+    padding: 20px;
+    margin: 15px;
+    /* width: 10px; */
+  }
+
+  .logo img{
+    width: 300px;
+    border-radius: 15px;
   }
 
 .image_cont {
@@ -152,22 +171,22 @@ h2#about{
 
 header {
     background-color: rgb(104, 5, 54);
-
-    margin-top: 5em;
+    width: 100%;
+    /* border-radius: 15px; */
+    margin: 0 20px;
+    /* margin-top: 5em;
     margin-left: 2em;
-    margin-right: 2em;
-    
+    margin-right: 2em; */
 
 }
-.btn  {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-}
 
-/* .two { 
-    background-color: bisque; 
- } 
+
+
+
+
+.two {
+    background-color: bisque;
+}
 
  .three { 
      background-color: burlywood; 
@@ -227,8 +246,10 @@ header {
     color: #ddd;
     width: 100px;
     font-weight: bold;
-
+  }
+  #enter_idea{
+    height: 35px;
+    line-height: 35px;
   }
 
   
-
