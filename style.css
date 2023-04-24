@@ -96,6 +96,7 @@ h2 {
 .list-of-ideas label {
     font-weight: bold;
 }
+
 .one {
     background-color: blueviolet;
     display: flex;
@@ -124,6 +125,7 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 5px;
     text-align: center;
+
  }
 
  .wrapper{
@@ -180,19 +182,11 @@ h2 {
 
 header {
     background-color: rgb(104, 5, 54);
-    width: 100%;
-    /* border-radius: 15px; */
-    margin: 0 20px;
-    /* margin-top: 5em;
+
+    margin-top: 5em;
     margin-left: 2em;
-    margin-right: 2em; */
-
+    margin-right: 2em; 
 }
-
-
-
-
-
 .two {
     background-color: bisque;
 }
@@ -208,7 +202,7 @@ header {
 .five {
     background-color: cornsilk;
 }   
-*/
+
 .section {
     background-size: cover;
     background-position: center;
