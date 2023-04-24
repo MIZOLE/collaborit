@@ -9,8 +9,8 @@ if (sessionStorage.getItem("checking")) {
 }
 
 function read_idea(){
-    let container = '<h2> Selected </h2><br><hr>';
-    let container2 = '<br><h2> Not selected </h2><br><hr>';
+    let container = '';
+    let container2 = '<br><h2>On going collaborations</h2><br><hr>';
     store_cards.forEach((ele, i) => {
         if( !ele.selected ){
             container += `
@@ -42,7 +42,7 @@ function read_idea(){
         
 
     });
-    document.querySelector(".one").innerHTML = container
+    document.querySelector(".card-wrapper").innerHTML = container
     document.querySelector(".selected").innerHTML = container2
 }
 
@@ -51,7 +51,7 @@ read_idea()
 let item = {}
 function create() {
     let input1 = document.getElementById('name').value;
-    let input2 = document.getElementById('surname').value;
+    let input2 = document.getElementById('email').value;
     let input3 = document.getElementById('enter_idea').value;
 
     if (input1 && input2 && input3) {

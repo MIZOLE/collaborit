@@ -10,10 +10,15 @@
     <link rel="stylesheet" href="style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ideas</title>
+    
+</head>
+
+<body>
+
     <header>
         <div class="pic">
-            <h1>We share ideas</h1>
+            <h1 id="heading">We share ideas</h1>
         </div>
         <div class="topnav">
             <div class="navbar">
@@ -23,47 +28,55 @@
             </div>
         </div>
     </header>
-</head>
 
-<body>
+    <section class="firstsection">
+        <!-- <div class="box-main"> -->
+            <div class="firsthalf">
+                <h2 class="text-big" id="About">
+                    ABOUT
+                </h2>
+
+                <p class="text-small">
+                    Are you interested in doing business in South Africa?If so, find here a list of businesses ideas to start here on this continent.
+
+                    These business ideas offer opportunities for entrepreneurs who are looking to start something new, whether you’ve run a business before or are looking to launch your first business.
+
+                </p>
+            </div>
+        </div>
+    </section>   
     <h1>View ideas</h1>
 
     <div class="container">
-        <div class="section one active"></div>
+        <div class="section one active">
+            <h2 class="not-selected">
+                New Ideas
+            </h2>
+            <div class="card-wrapper">
+                
+            </div>
+        </div>
+        <div class="selected"></div>
+    </div>  
+    
 
-         <!-- <div id="section one">
-
-         </div>
-         <div class="section two">
-
-         </div>
-         <div class="section three">
-
-         </div>
-         <div class="section four">
-
-         </div>
-         <div class="section five">
-            
-         </div> -->
-    </div> 
-    <div class="selected">
-
-    </div> 
+    
 
     <!-- <p><button>Collaborate</button></p> -->
 
     <div class="drop_an_idea">
         <div class="list-of-ideas">
 
-            <p>Enter your name</p>
-            <input type="text" id="name" value="" placeholder="Name" required>
-            <p>Enter your surname</p>
-            <input type="text" id="surname" value="" placeholder="surname" required>
-            <p>Enter your idea</p>            
-            <input type="text" id="enter_idea" valaue="" placeholder="Brief about your idea" required>
-            <button class="submit" itemid="idea" onclick="create()">Add my idea</button>
+            <p> Please enter your full name:</p>
+            <input type="text" id="name" value="" placeholder="John Adams" required>
+            <p>Enter your email address:</p>
+            <input type="text" id="email" value="" placeholder="email address" required>
+            <p>Enter your idea:</p>            
+            <input type="text" id="enter_idea" valaue="" placeholder="idea" required>
+
+            <!-- <button class="submit" itemid="idea" onclick="create()">Add my idea</button> -->
         </div>
+        <button class="submit" itemid="idea" onclick="create()">Add my idea</button>
 
     </div>
 </body>
