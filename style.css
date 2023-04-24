@@ -201,8 +201,14 @@ header {
     justify-content: center;
     justify-content: space-between;
   }
-.ideas h3 {
+.ideas h3, .show {
     padding: 0 20px;
+}
+
+.show {
+    color: rgb(104, 69, 69);
+    font-weight: bold;
+    font-size: 14px;
 }
   .submit {
     border-radius: 7px;
