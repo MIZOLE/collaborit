@@ -81,8 +81,17 @@ h1#view{
 }
 h2 {
     text-align: center;
+    text-decoration-style: solid;
+    
 }
 
+.text-small {
+    /* font-size: xx-large; */
+    text-align: justify;
+    color: white;
+    font-size: 17px;
+
+}
 
 .list-of-ideas label {
     font-weight: bold;
