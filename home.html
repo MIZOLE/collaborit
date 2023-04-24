@@ -10,65 +10,118 @@
     <link rel="stylesheet" href="style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <header>
-        <div class="pic">
-            <h1>We share ideas</h1>
-        </div>
-        <div class="topnav">
-            <div class="navbar">
-                <a href="#new_card">Home</a>
-                <a href="#drop_an_idea">Ideas</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </header>
+    <title>ideas</title>
+    
 </head>
 
 <body>
-    <h1>View ideas</h1>
+
+    <body class="body">
+        <!-- <nav class="navbar background"> -->
+            <!-- <ul class="nav-list"> -->
+                
+            
+
+    <header>
+        <div class="pic">
+            <!-- <h1 id="heading">We share ideas</h1> -->
+        <!-- </div>
+        <div class="topnav"> -->
+            <div class="logo">
+                <img src="kgotso.png">
+            </div>
+            <!-- <div class="navbar">
+                <a href="#new_card">Home</a>
+                <a href="#drop_an_idea">Ideas</a>
+                <a href="#contact">Contact</a>
+            </div> -->
+        </div>
+    </header>
+    <div class="drop_an_idea">
+        <!-- <div class="conainer"></div> -->
+        <div class="ideas">
+            <h3>Add your idea</h3>
+            <div class="list-of-ideas">
+            
+            
+                <!-- <fieldset></fieldset> -->
+                <label for="name">Fullname:</label>
+                <input type="text" id="name" value="" placeholder="John Adams" required>
+                <label>Email:</label>
+                <input type="text" id="email" value="" placeholder="email@example.com" required>
+                <label>Idea:</label>            
+                <input type="text" id="enter_idea" valaue="" placeholder="idea" required>
+                <button class="submit" itemid="idea" onclick="create()" >Submit</button>
+            </div>
+            <small><span class="show"></span></small>
+        </div>
+        
+         
+
+       
+
+    </div>
+
+
+    
+
+    <section class="firstsection">
+        <!-- <div class="box-main"> -->
+            <div class="firsthalf">
+                <h2 class="text-big" id="About">
+                    ABOUT
+                </h2>
+
+                <p class="text-small">
+
+                    Here on this platform you are able read through shared ideas, collaborate on those shared ideas and add your own idea.
+
+                </p>
+            </div>
+        </div>
+    </section>   
+    
 
     <div class="container">
-        <div class="section one active"></div>
+        <h1>View ideas</h1>
+        <div class="section one active">
+            <h2 class="not-selected">
+                New Ideas
+            </h2>
+            <div class="card-wrapper">
+                
+            </div>
+            <h2 class="not-selected">
+                Selected Ideas
+            </h2>
+            <div class="selected card-wrapper">
 
-         <!-- <div id="section one">
+            </div>
+        </div>
+        
+        
+    </div>  
+    
 
-         </div>
-         <div class="section two">
-
-         </div>
-         <div class="section three">
-
-         </div>
-         <div class="section four">
-
-         </div>
-         <div class="section five">
-            
-         </div> -->
-    </div> 
-    <div class="selected">
-
-    </div> 
+    
 
     <!-- <p><button>Collaborate</button></p> -->
 
-    <div class="drop_an_idea">
+    <!-- <div class="drop_an_idea">
         <div class="list-of-ideas">
 
-            <form action="/action_page.php" method="post" required>
-            <p>Enter your name</p>
-            <input type="text" id="full_name" value="" placeholder="Full Name" required>
-            <p>Enter your address</p>
-            <input type="email" id="surname" value="" placeholder="address" required>
-            <p>Enter your idea</p>            
-            <input type="text" id="enter_idea" valaue="" placeholder="Brief about your idea" required>
-            <button class="submit" itemid="idea" onclick="create()">Add my idea</button>
-            <div id="show" ></div> 
-        </form>
-        </div>
+            <p> Please enter your full name:</p>
+            <input type="text" id="name" value="" placeholder=" John Adams " required>
+            <p>Enter your email address:</p>
+            <input type="text" id="email" value="" placeholder=" email address " required>
+            <p>Enter your idea:</p>            
+            <input type="text" id="enter_idea" valaue="" placeholder="idea" required>
+            <div id="show" style="color: red;"></div>
+            <!-- <button class="submit" itemid="idea" onclick="create()">Add my idea</button> -->
+        <!-- </div>
+        <button class="submit" itemid="idea" onclick="create()">Add my idea</button>
 
-    </div>
+    </div> -->
 </body>
 
 <script src="index.js"></script>

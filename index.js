@@ -9,40 +9,38 @@ if (sessionStorage.getItem("checking")) {
 }
 
 function read_idea(){
-    let container = '<h2> Not selected </h2><br><hr>';
-    let container2 = '<br><h2> Selected </h2><br><hr>';
+    
+    let container = '';
+    let container2 = '';
     store_cards.forEach((ele, i) => {
         if( !ele.selected ){
             container += `
                 
-                <div class="card" style="width: 18rem;" onclick="collaborate(${i})">
+                <div class="card" style="width: 18rem; margin-bottom: 10px;background-color:skyblue" onclick="collaborate(${i})">
                     <div class="card-body">
                         <h5 class="card-title">${ele.idea}</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Date: </h6>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Date: ${ele.date} </h6>
                         <p class="card-text">${ele.idea}</p>
-                        <a href="#" class="card-link">Collaborators: 0</a>
                         <a href="#" class="card-link">Name: ${ele.username} ${ele.surname}</a>
                     </div>
                 </div>
                 `
-        }else{
+        }else{  
             container2 += `
                 
-                <div class="card" style="width: 18rem; color: green;"  onclick="collaborate(${i})" >
+                <div class="card" style="width: 18rem; margin-bottom: 10px;" onclick="collaborate(${i})">
                 <div class="card-body">
                 <h5 class="card-title">${ele.idea}</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Date: </h6>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Date: ${ele.date}</h6>
                 <p class="card-text">${ele.idea}</p>
-                <a href="#" class="card-link">Collaborators: 0</a>
+                <a href="#" class="card-link">Collaborators: ${ele.collaborators}</a>
                 <a href="#" class="card-link">Name: ${ele.username} ${ele.surname}</a>
                 </div>
             </div>
-                `
+               `
         }
-        
-
     });
-    document.querySelector(".one").innerHTML = container
+    document.querySelector(".card-wrapper").innerHTML = container
     document.querySelector(".selected").innerHTML = container2
 }
 
@@ -51,8 +49,9 @@ read_idea()
 let item = {}
 function create() {
     let input1 = document.getElementById('name').value;
-    let input2 = document.getElementById('surname').value;
+    let input2 = document.getElementById('email').value;
     let input3 = document.getElementById('enter_idea').value;
+    let d = new Date();
 
     if (input1 && input2 && input3) {
         
@@ -61,21 +60,17 @@ function create() {
         item.idea = input3;
         item.selected = false;
         item.collaborators = -1;
+        item.date = `${d.getFullYear()}-${d.getDate()}-${d.getMonth() + 1}`;
         store_cards.push(item)
         console.log(store_cards)
 
         sessionStorage.setItem("checking", JSON.stringify(store_cards))
+    } else {
+        return formValidation();
     }
-    read_idea()
 
-//     function formValidation(){
-//         let username = document.getElementById("name").value;
-//         let contact_details = document.getElementById("surname").value;
-//     let idea = document.getElementById("enter_idea").value;
+    window.location.reload();
 
-//     console.log(username)
-//     document.querySelector("show").innerHTML = "Please enter required details"
-//     }
 }
 
 function collaborate(index){
@@ -89,18 +84,14 @@ function collaborate(index){
     read_idea()
 }
 
+function formValidation(){
 
+    let username = document.getElementById("name").value;
+    let contact_details = document.getElementById("email").value
+    let idea = document.getElementById("enter_idea").value
+    console.log(username)
+    if(!username && !contact_details && !idea){
+        document.querySelector(".show").innerHTML = "Please fill the required details";
+    }
+}
 
-
-
-// else if ( input1 =="") {
-//     alert( "please enter name")
-// }
-
-// else if (input2 =="") {
-//     alert("please enter contact details")
-// }
-
-// else if (input3 =="") {
-//     alert("please enter brief")
-// }
