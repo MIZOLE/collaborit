@@ -20,21 +20,19 @@ function read_idea(){
                     <div class="card-body">
                         <h5 class="card-title">${ele.idea}</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Date: ${ele.date} </h6>
-                        <p class="card-text">${ele.idea}</p>
-                        <a href="#" class="card-link" style="color:white">Name: ${ele.username} ${ele.surname}</a>
+                        <a href="#" class="card-link">Name: ${ele.username} ${ele.surname}</a>
                     </div>
                 </div>
                 `
         }else{  
             container2 += `
-
-                <div class="card" style="width: 18rem; margin-bottom: 10px;background-color:indigo" onclick="collaborate(${i})">
+                
+                <div class="card" style="width: 18rem; margin-bottom: 10px;" onclick="collaborate(${i})">
                 <div class="card-body">
-                <h5 class="card-title">${ele.idea}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">Date: ${ele.date}</h6>
-                <p class="card-text">${ele.idea}</p>
-                <a href="#" class="card-link" style="color:white">Collaborators: ${ele.collaborators}</a>
-                <a href="#" class="card-link" style="color:white">Name: ${ele.username} ${ele.surname}</a>
+                <p class="card-text"> ${ele.idea}</p>
+                <a href="#" class="card-link">Collaborators: ${ele.collaborators}</a>
+                <a href="#" class="card-link">Name: ${ele.username} ${ele.surname}</a>
                 </div>
             </div>
                `
