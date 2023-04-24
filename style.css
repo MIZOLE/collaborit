@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     background-color: bisque;
     background-position: center;
+    /* color: white; */
 }
 
 .navbar a {
@@ -56,7 +57,7 @@ body {
  }  
 .firsthalf {
     background-color: blueviolet;
-    padding: 0 10px;
+    padding: 10px;
 }
 h1#heading {
     background-position: center;
@@ -84,6 +85,16 @@ h1#view{
 }
 h2 {
     text-align: center;
+    text-decoration-style: solid;
+    
+}
+
+.text-small {
+    /* font-size: xx-large; */
+    text-align: justify;
+    color: white;
+    font-size: 17px;
+
 }
 
 .list-of-ideas label {
@@ -117,7 +128,7 @@ h2 {
     max-width: 300px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 5px;
-    text-align: center;
+    text-align: justify;
 
  }
 

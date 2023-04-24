@@ -18,7 +18,8 @@ function read_idea(){
                 
                 <div class="card card-1" style="width: 18rem; margin-bottom: 10px;" title="Click to select" onclick="collaborate(${i})">
                     <div class="card-body">
-                        <h5 class="card-title">${ele.username}  ${ele.surname}</h5>
+                        <h5 class="card-title">${ele.username}</h5>
+                        <p>Email: ${ele.surname}</p>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Date: ${ele.date} </h6>
                         <p href="#" class="username">Idea: ${ele.idea}</p>
                     </div>
@@ -31,8 +32,9 @@ function read_idea(){
                 <div class="card-body">
                 <h6 class="card-subtitle mb-2 text-body-secondary">Date: ${ele.date}</h6>
                 <p class="card-text"> ${ele.idea}</p>
-                <p class="card-link">Collaborators: ${ele.collaborators}</p>
-                <p  class="card-link">Name: ${ele.username} ${ele.surname}</p>
+                <p class="">Collaborators: ${ele.collaborators}</p>
+                <p  class="">Name: ${ele.username} </p>
+                <p>${ele.surname}</p>
                 </div>
             </div>
                `
