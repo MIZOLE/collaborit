@@ -10,12 +10,12 @@ if (sessionStorage.getItem("checking")) {
 
 function read_idea(){
     let container = '';
-    let container2 = '<br><h2>On going collaborations</h2><br><hr>';
+    let container2 = '';
     store_cards.forEach((ele, i) => {
         if( !ele.selected ){
             container += `
                 
-                <div class="card" style="width: 18rem; margin-bottom: 10px;" onclick="collaborate(${i})">
+                <div class="card" style="width: 18rem; margin-bottom: 10px;background-color:skyblue" onclick="collaborate(${i})">
                     <div class="card-body">
                         <h5 class="card-title">${ele.idea}</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Date: </h6>
@@ -28,7 +28,7 @@ function read_idea(){
         }else{
             container2 += `
 
-                <div class="card" style="width: 18rem; margin-bottom: 10px;" onclick="collaborate(${i})">
+                <div class="card" style="width: 18rem; margin-bottom: 10px;background-color:indigo" onclick="collaborate(${i})">
                 <div class="card-body">
                 <h5 class="card-title">${ele.idea}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">Date: </h6>
@@ -84,7 +84,7 @@ function collaborate(index){
 
 function formValidation(){
 
-    let username = document.getElementById("name"),value;
+    let username = document.getElementById("name").value;
     let contact_details = document.getElementById("surname").value
     let idea = document.getElementById("enter_idea").value
 

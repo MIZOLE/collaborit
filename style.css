@@ -57,6 +57,12 @@ h1#heading {
     text-transform: uppercase;
 }
 
+/* h2#About{
+    text-align: center;
+} */
+
+p
+
 .one {
     background-color: blueviolet;
     display: flex;
@@ -67,16 +73,29 @@ h1#heading {
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
+    color: black;
     /* gap: 2px; */
     /* justify-content: space-evenly; */
 }
-.card {
+
+.selected{
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+
+}
+
+ .card {
     box-shadow: inset;
     max-width: 300px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 5px;
     text-align: center;
-}
+ }
+
+ .wrapper{
+    display: flex;
+ }
 
 /* .wifi {
     color: black;
@@ -108,10 +127,6 @@ h1#heading {
 
 }
 
-
-
-
-
   .logo {
     text-align: left;
     position: right ;
@@ -130,26 +145,22 @@ header {
 
 }
 
+/* .two { 
+    background-color: bisque; 
+ } 
 
-
-
-
-.two {
-    background-color: bisque;
-}
-
-.three {
-    background-color: burlywood;
+ .three { 
+     background-color: burlywood; 
 }
 
 .four {
-    background-color: blue;
+    background-color: black;
 }
 
 .five {
     background-color: cornsilk;
 }   
-
+*/
 .section {
     background-size: cover;
     background-position: center;
