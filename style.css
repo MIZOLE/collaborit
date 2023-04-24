@@ -19,7 +19,9 @@ body {
     padding: 14px 16px;
     text-decoration: none;
   } 
-
+.pic {
+    width: 100%;
+}
   /* Cha    nge background on mouse-over */
 .navbar a:hover {
     background: #ddd;
@@ -56,6 +58,15 @@ h1#heading {
     color: black;
     text-transform: uppercase;
 }
+
+h1#view{
+    text-align: left;
+    padding-left: 500px;
+}
+h2 {
+    text-align: center;
+}
+
 
 .one {
     background-color: blueviolet;
@@ -115,6 +126,14 @@ h1#heading {
   .logo {
     text-align: left;
     position: right ;
+    padding: 20px;
+    margin: 15px;
+    /* width: 10px; */
+  }
+
+  .logo img{
+    width: 300px;
+    border-radius: 15px;
   }
 
 .image_cont {
@@ -122,17 +141,15 @@ h1#heading {
 }
 
 header {
-    background-color: blueviolet;
-
-    margin-top: 5em;
+    background-color: rgb(104, 5, 54);
+    width: 100%;
+    /* border-radius: 15px; */
+    margin: 0 20px;
+    /* margin-top: 5em;
     margin-left: 2em;
-    margin-right: 2em;
+    margin-right: 2em; */
 
 }
-
-
-
-
 
 .two {
     background-color: bisque;
@@ -166,10 +183,25 @@ header {
     flex: 3;
   } */
 
-  #enter_idea{
+  /* #enter_idea {
     height: 35px;
     line-height: 35px;
+    align-items: center;
+
+  } */
+
+  .list-of-ideas {
+    display:flex;
+    margin: 15px;
+    justify-content: space-between;
+  }
+
+  .submit {
+    border-radius: 7px;
+    margin-right: 100px;
+    box-shadow: 0 0 5px  skyblue, 0 0 25px  skyblue, 0 0 50px  skyblue, 0 0  skyblue;
+    background: skyblue;
+
   }
 
   
-

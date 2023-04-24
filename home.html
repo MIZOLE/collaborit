@@ -16,18 +16,46 @@
 
 <body>
 
+    <body class="body">
+        <nav class="navbar background">
+            <!-- <ul class="nav-list"> -->
+                
+            
+
     <header>
         <div class="pic">
-            <h1 id="heading">We share ideas</h1>
-        </div>
-        <div class="topnav">
-            <div class="navbar">
+            <!-- <h1 id="heading">We share ideas</h1> -->
+        <!-- </div>
+        <div class="topnav"> -->
+            <div class="logo">
+                <img src="kgotso.png">
+            </div>
+            <!-- <div class="navbar">
                 <a href="#new_card">Home</a>
                 <a href="#drop_an_idea">Ideas</a>
                 <a href="#contact">Contact</a>
-            </div>
+            </div> -->
         </div>
     </header>
+
+
+    <div class="drop_an_idea">
+        <div class="list-of-ideas">
+
+            <p> Please enter your full name:</p>
+            <input type="text" id="name" value="" placeholder="          John Adams  " required>
+            <!-- <p>date:</p>
+            <input type="text" id="date" value="" required> -->
+            <p>Enter your email address:</p>
+            <input type="text" id="email" value="" placeholder="           email address  " required>
+            <p>Enter your idea:</p>
+            <input type="text" id="enter_idea" valaue="" placeholder="            idea  " required>
+
+            <button class="submit" itemid="idea" onclick="create()">Add my idea</button>
+        </div>
+        <!-- <button class="submit" itemid="idea" onclick="create()">Add my idea</button> -->
+
+    </div>
 
     <section class="firstsection">
         <!-- <div class="box-main"> -->
@@ -37,15 +65,17 @@
                 </h2>
 
                 <p class="text-small">
-                    Are you interested in doing business in South Africa?If so, find here a list of businesses ideas to start here on this continent.
+                    Are you interested in doing business in South Africa? If so, find here a list of businesses ideas to start.
 
                     These business ideas offer opportunities for entrepreneurs who are looking to start something new, whether you’ve run a business before or are looking to launch your first business.
+
+                    Here on this platform you are able read through shared ideas, collaborate on those shared ideas and add your own idea.
 
                 </p>
             </div>
         </div>
     </section>   
-    <h1>View ideas</h1>
+     <h1 id="view"> View ideas </h1>
 
     <div class="container">
         <div class="section one active">
@@ -64,7 +94,7 @@
 
     <!-- <p><button>Collaborate</button></p> -->
 
-    <div class="drop_an_idea">
+    <!-- <div class="drop_an_idea">
         <div class="list-of-ideas">
 
             <p> Please enter your full name:</p>
@@ -74,11 +104,11 @@
             <p>Enter your idea:</p>            
             <input type="text" id="enter_idea" valaue="" placeholder="idea" required>
 
-            <!-- <button class="submit" itemid="idea" onclick="create()">Add my idea</button> -->
-        </div>
+            <button class="submit" itemid="idea" onclick="create()">Add my idea</button> -->
+        <!-- </div>
         <button class="submit" itemid="idea" onclick="create()">Add my idea</button>
 
-    </div>
+    </div> -->
 </body>
 
 <script src="index.js"></script>

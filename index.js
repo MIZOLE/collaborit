@@ -15,7 +15,7 @@ function read_idea(){
         if( !ele.selected ){
             container += `
                 
-                <div class="card" style="width: 18rem; margin-bottom: 10px;" onclick="collaborate(${i})">
+                <div class="card" style="width: 18rem; margin-bottom: 10px ;background-color:skyblue" onclick="collaborate(${i})">
                     <div class="card-body">
                         <h5 class="card-title">${ele.idea}</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Date: </h6>
@@ -28,7 +28,7 @@ function read_idea(){
         }else{
             container2 += `
                 
-                <div class="card" style="width: 18rem; margin-bottom: 10px;" onclick="collaborate(${i})">
+                <div class="card" style="width: 18rem; margin-bottom: 10px;background-color:" onclick="collaborate(${i})">
                 <div class="card-body">
                 <h5 class="card-title">${ele.idea}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">Date: </h6>
