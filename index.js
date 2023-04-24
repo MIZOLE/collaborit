@@ -20,7 +20,7 @@ function read_idea(){
                     <div class="card-body">
                         <h5 class="card-title">${ele.idea}</h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Date: ${ele.date} </h6>
-                        <a href="#" class="card-link">Name: ${ele.username} ${ele.surname}</a>
+                        <a href="#" class="card-link">Name: ${ele.username} 'br/' ${ele.surname}</a>
                     </div>
                 </div>
                 `
@@ -38,6 +38,7 @@ function read_idea(){
                `
         }
     });
+
     document.querySelector(".card-wrapper").innerHTML = container
     document.querySelector(".selected").innerHTML = container2
 }
