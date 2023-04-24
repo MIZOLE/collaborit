@@ -9,8 +9,8 @@ if (sessionStorage.getItem("checking")) {
 }
 
 function read_idea(){
-    let container = '<h2> Selected </h2><br><hr>';
-    let container2 = '<br><h2> Not selected </h2><br><hr>';
+    let container = '<h2> Not selected </h2><br><hr>';
+    let container2 = '<br><h2> Selected </h2><br><hr>';
     store_cards.forEach((ele, i) => {
         if( !ele.selected ){
             container += `
@@ -28,7 +28,7 @@ function read_idea(){
         }else{
             container2 += `
                 
-                <div class="card" style="width: 18rem;" onclick="collaborate(${i})">
+                <div class="card" style="width: 18rem; color: green;"  onclick="collaborate(${i})" >
                 <div class="card-body">
                 <h5 class="card-title">${ele.idea}</h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">Date: </h6>
@@ -67,6 +67,15 @@ function create() {
         sessionStorage.setItem("checking", JSON.stringify(store_cards))
     }
     read_idea()
+
+//     function formValidation(){
+//         let username = document.getElementById("name").value;
+//         let contact_details = document.getElementById("surname").value;
+//     let idea = document.getElementById("enter_idea").value;
+
+//     console.log(username)
+//     document.querySelector("show").innerHTML = "Please enter required details"
+//     }
 }
 
 function collaborate(index){
@@ -79,3 +88,19 @@ function collaborate(index){
     console.log(store_cards);
     read_idea()
 }
+
+
+
+
+
+// else if ( input1 =="") {
+//     alert( "please enter name")
+// }
+
+// else if (input2 =="") {
+//     alert("please enter contact details")
+// }
+
+// else if (input3 =="") {
+//     alert("please enter brief")
+// }

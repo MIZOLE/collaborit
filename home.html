@@ -56,13 +56,16 @@
     <div class="drop_an_idea">
         <div class="list-of-ideas">
 
+            <form action="/action_page.php" method="post" required>
             <p>Enter your name</p>
-            <input type="text" id="name" value="" placeholder="Name" required>
-            <p>Enter your surname</p>
-            <input type="text" id="surname" value="" placeholder="surname" required>
+            <input type="text" id="full_name" value="" placeholder="Full Name" required>
+            <p>Enter your address</p>
+            <input type="email" id="surname" value="" placeholder="address" required>
             <p>Enter your idea</p>            
             <input type="text" id="enter_idea" valaue="" placeholder="Brief about your idea" required>
             <button class="submit" itemid="idea" onclick="create()">Add my idea</button>
+            <div id="show" ></div> 
+        </form>
         </div>
 
     </div>
