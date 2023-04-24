@@ -10,6 +10,7 @@ if (sessionStorage.getItem("checking")) {
 
 function read_idea(){
     let container = '';
+    
     let container2 = '<br><h2>On going collaborations</h2><br><hr>';
     store_cards.forEach((ele, i) => {
         if( !ele.selected ){
@@ -18,14 +19,14 @@ function read_idea(){
                 <div class="card" style="width: 18rem; margin-bottom: 10px;" onclick="collaborate(${i})">
                     <div class="card-body">
                         <h5 class="card-title">${ele.idea}</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">Date: </h6>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Date: ${ele.Date} </h6>
                         <p class="card-text">${ele.idea}</p>
                         <a href="#" class="card-link">Collaborators: 0</a>
                         <a href="#" class="card-link">Name: ${ele.username} ${ele.surname}</a>
                     </div>
                 </div>
                 `
-        }else{
+        }else{  
             container2 += `
 
                 <div class="card" style="width: 18rem; margin-bottom: 10px;" onclick="collaborate(${i})">
@@ -37,10 +38,8 @@ function read_idea(){
                 <a href="#" class="card-link">Name: ${ele.username} ${ele.surname}</a>
                 </div>
             </div>
-                `
+               `
         }
-        
-
     });
     document.querySelector(".card-wrapper").innerHTML = container
     document.querySelector(".selected").innerHTML = container2
@@ -61,12 +60,13 @@ function create() {
         item.idea = input3;
         item.selected = false;
         item.collaborators = -1;
+        item.Date = new Date;
         store_cards.push(item)
         console.log(store_cards)
 
         sessionStorage.setItem("checking", JSON.stringify(store_cards))
     }
-    
+
     window.location.reload();
 
 }
@@ -84,12 +84,12 @@ function collaborate(index){
 
 function formValidation(){
 
-    let username = document.getElementById("name"),value;
+    let username = document.getElementById("name").value;
     let contact_details = document.getElementById("surname").value
     let idea = document.getElementById("enter_idea").value
-
-    if(username == "" && contact_details && idea){
-        document.getElementById("show") = "Please fill the required details";
+    console.log(username)
+    if(username == ""){
+        document.querySelector(".show").innerHTML = "Please fill the required details";
     }
 }
 
