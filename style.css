@@ -246,7 +246,7 @@ header {
     justify-content: space-between;
   }
 .ideas h3, .show {
-    padding: 0 20px;
+    text-align: center;
 }
 
 .show {
@@ -263,9 +263,9 @@ header {
     width: 100px;
     font-weight: bold;
   }
-  #enter_idea{
+  /* #enter_idea{
     height: 35px;
     line-height: 35px;
-  }
+  } */
 
   

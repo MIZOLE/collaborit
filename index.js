@@ -74,6 +74,7 @@ function create() {
 
 }
 
+
 function collaborate(index){
     let uptaded_item = store_cards[index];
     uptaded_item.selected = true;
@@ -85,10 +86,16 @@ function collaborate(index){
     read_idea()
 }
 
+// let text = "Do you wanna collaborate in this project?"
+
+// if(confirm(text) == true){
+    
+// }
+
 function formValidation(){
 
     let username = document.getElementById("name").value;
-    let contact_details = document.getElementById(" email ").value
+    let contact_details = document.getElementById("email").value
     let idea = document.getElementById("enter_idea").value
     console.log(username)
     if(!username && !contact_details && !idea){
